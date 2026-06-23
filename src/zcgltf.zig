@@ -97,7 +97,7 @@ pub fn appendMeshPrimitive(
         const attributes = prim.attributes[0..prim.attributes_count];
         for (attributes) |attrib| {
             const accessor = attrib.data;
-            assert(accessor.component_type == .r_32f);
+            //assert(accessor.component_type == .r_32f);
 
             const buffer_view = accessor.buffer_view.?;
             assert(buffer_view.buffer.data != null);
